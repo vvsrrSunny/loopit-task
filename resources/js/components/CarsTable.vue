@@ -7,17 +7,11 @@
       <table-header-cell> cars in stock </table-header-cell>
     </template>
     <template #body>
-      <tr>
-        <table-cell> X 1 </table-cell>
-        <table-cell> BMW </table-cell>
-        <table-cell> BMW </table-cell>
-        <table-cell> BMW </table-cell>
-      </tr>
-      <tr>
-        <table-cell> X 1 </table-cell>
-        <table-cell> BMW </table-cell>
-        <table-cell> BMW </table-cell>
-        <table-cell> BMW </table-cell>
+      <tr v-for="car in cars" :key="car.id">
+        <table-cell>  {{car.car_name}}</table-cell>
+        <table-cell>  {{car.automaker}}</table-cell>
+        <table-cell>  {{car.number_of_available_cars}}</table-cell>
+        <table-cell>  {{car.in_stock}}</table-cell>
       </tr>
     </template>
   </table-layout>
@@ -48,6 +42,7 @@ export default {
   methods: {
     displayCars() {
       axios.get("/dashboard").then((response) => {
+          console.log(response.data);
         this.cars = response.data;
       });
     },
