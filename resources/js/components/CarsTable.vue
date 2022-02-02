@@ -8,10 +8,10 @@
     </template>
     <template #body>
       <tr v-for="car in cars" :key="car.id">
-        <table-cell>  {{car.car_name}}</table-cell>
-        <table-cell>  {{car.automaker}}</table-cell>
-        <table-cell>  {{car.number_of_available_cars}}</table-cell>
-        <table-cell>  {{car.in_stock}}</table-cell>
+        <table-cell> {{ car.car_name }}</table-cell>
+        <table-cell> {{ car.automaker }}</table-cell>
+        <table-cell> {{ car.number_of_available_cars }}</table-cell>
+        <table-cell> {{ car.in_stock == 1 ? "yes" : "no" }}</table-cell>
       </tr>
     </template>
   </table-layout>
@@ -42,7 +42,7 @@ export default {
   methods: {
     displayCars() {
       axios.get("/dashboard").then((response) => {
-          console.log(response.data);
+        console.log(response.data);
         this.cars = response.data;
       });
     },
