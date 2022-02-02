@@ -1,52 +1,26 @@
 <template>
   <table-layout>
     <template #heading>
-      <th
-        scope="col"
-        class="
-          px-6
-          py-3
-          text-left text-xs
-          font-medium
-          text-gray-500
-          uppercase
-          tracking-wider
-        "
-      >
-        Car Name
-      </th>
-      <th
-        scope="col"
-        class="
-          px-6
-          py-3
-          text-left text-xs
-          font-medium
-          text-gray-500
-          uppercase
-          tracking-wider
-        "
-      >
-        Auto make
-      </th>
+      <table-header-cell> Car Name </table-header-cell>
+      <table-header-cell> Auto make </table-header-cell>
     </template>
     <template #body>
-      <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-        X 1
-      </td>
-      <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-        BMW
-      </td>
+      <table-cell> X 1 </table-cell>
+      <table-cell> BMW </table-cell>
     </template>
   </table-layout>
 </template>
 
 <script>
 import TableLayout from "./TableLayout.vue";
+import TableHeaderCell from "./TableHeaderCell.vue";
+import TableCell from "./TableCell.vue";
 
 export default {
   components: {
     TableLayout,
+    TableHeaderCell,
+    TableCell,
   },
 };
 </script>
