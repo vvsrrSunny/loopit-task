@@ -21,5 +21,7 @@ test('users can get the list of available cars', function () {
 
     $this->actingAs($user)->getJson(route('dashboard'))
         ->assertOk()
+        ->assertJson([['id' => 3, 'car_name' => 'first car'],
+         ['id' => 4, 'car_name' => 'second car']])
         ->assertJsonCount(3);
 });
