@@ -16,6 +16,7 @@ class CarController extends Controller
     public function __invoke(Request $request)
     {
         if ($request->expectsJson()) {
+            
             return Car::query()->orderBy('car_name')->get();
         }
 
