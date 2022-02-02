@@ -8,11 +8,14 @@
             <nav class="bg-indigo-600">
                 <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                     <div class="border-b border-indigo-300">
-                        <div class="flex items-center justify-between h-16 px-4 sm:px-0">
+                        <div class="flex items-center justify-end h-16 px-4 sm:px-0">
                             <div class="flex items-center">
                                 <div class="hidden md:block">
                                     <div class="flex items-baseline space-x-4">
-                                        <a href="#" class="bg-indigo-700 text-white px-3 py-2 rounded-md text-sm font-medium">Dashboard</a>
+                                        <form method="POST" action="{{ route('logout') }}">
+                                            @csrf
+                                            <input class="mt-4 bg-indigo-700 text-white px-3 py-2 rounded-md text-sm font-medium cursor-pointer hover:opacity-75" type="submit" value="logout">
+                                        </form>
                                     </div>
                                 </div>
                             </div>
