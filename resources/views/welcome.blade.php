@@ -11,10 +11,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="bg-gray-50 min-h-screen">
     <div class="flex flex-col">
         <div class="flex p-6 flex-row justify-between bg-indigo-600">
-        <a href="/" class="bg-indigo-700 text-white px-3 py-2 rounded-md text-sm font-medium cursor-pointer hover:opacity-75">Home</a>
+            <a href="/" class="bg-indigo-700 text-white px-3 py-2 rounded-md text-sm font-medium cursor-pointer hover:opacity-75">Home</a>
             @if (Route::has('login'))
             <div class=" flex space-x-4">
                 @auth
@@ -29,15 +29,17 @@
             </div>
             @endif
         </div>
-        <div class="bg-gray-50 min-h-screen">
-    <div class="flex flex-col">
-        <p>dfd</p>
-        <p>dfdf</p>
-    </div>
-    </div>
+        <div>
+            <div class="flex flex-col">
+                <p>dfd</p>
+                <p>dfdf</p>
+            </div>
+        </div>
     </div>
 
     {{ vite_assets() }}
 </body>
+
+<x-footer />
 
 </html>
