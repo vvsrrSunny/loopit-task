@@ -51,8 +51,6 @@
 
     {{ vite_assets() }}
 
-    <x-footer />
 </body>
-
-
+<x-footer />
 </html>
