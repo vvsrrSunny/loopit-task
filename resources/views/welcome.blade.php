@@ -13,9 +13,10 @@
 
 <body>
     <div class="flex flex-col">
-        <div class="flex flex-row ">
+        <div class="flex px-6 py-4 flex-row justify-between">
+        <a href="/" class="bg-indigo-700 text-white px-3 py-2 rounded-md text-sm font-medium cursor-pointer hover:opacity-75">Home</a>
             @if (Route::has('login'))
-            <div class=" flex px-6 py-4 justify-end">
+            <div class=" flex space-x-4">
                 @auth
                 <a href="{{ url('/dashboard') }}" class="bg-indigo-700 text-white px-3 py-2 rounded-md text-sm font-medium cursor-pointer hover:opacity-75">Dashboard</a>
                 @else
