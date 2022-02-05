@@ -31,15 +31,28 @@
         </div>
         <div>
             <div class="flex flex-col">
-                <p>dfd</p>
-                <p>dfdf</p>
+                <div class="flex justify-center h-[400px]">
+                    <div class="w-10/12">
+                        <div class="bg-white">
+                            <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8 rounded-b-md shadow-md">
+                                <div class="text-center">
+                                    <h2 class="text-base font-semibold text-indigo-600 tracking-wide uppercase">Sunny Project</h2>
+                                    <p class="mt-1 text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl">Take control of your ideas.</p>
+                                    <p class="max-w-xl mt-5 mx-auto text-xl text-gray-500">Reach out for working on any of your ideas or projects, feel the confidence in getting your projects that is in line with your vision. I am expert in building
+                                        a small, medium and, large scale applications in way that suits clients interests. I do applications using the best industry practices, meaning its absolutely maintainable over the time with in a fraction of cost </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
     {{ vite_assets() }}
+
+    <x-footer />
 </body>
 
-<x-footer />
 
 </html>
