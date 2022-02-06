@@ -1,4 +1,4 @@
-<svg width="100px" height="100px" viewBox="0 -77.08 372.686 372.686" xmlns="http://www.w3.org/2000/svg">
+<svg width="70px" height="70px" viewBox="0 -77.08 372.686 372.686" xmlns="http://www.w3.org/2000/svg">
   <g id="Group_13" data-name="Group 13" transform="translate(-4529.657 -45.623)">
     <g id="Group_8" data-name="Group 8">
       <g id="Group_6" data-name="Group 6">
