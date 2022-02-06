@@ -13,7 +13,7 @@
                     <div class="border-b border-indigo-300">
                         <div class="flex items-center justify-between h-16 px-4 sm:px-0">
                             <a href="/">
-                                <x-application-logo class="w-10 h-10 fill-current text-gray-500" />
+                                <x-application-logo class="w-10 h-10 fill-current text-red-500 bg-red-200"/>
                             </a>
                             <div class="flex items-center">
                                 <div class="hidden md:block">
