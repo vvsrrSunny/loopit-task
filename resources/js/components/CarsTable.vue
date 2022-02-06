@@ -5,12 +5,14 @@
       <table-header-cell> Auto make </table-header-cell>
       <table-header-cell> Number of cars available </table-header-cell>
       <table-header-cell> cars in stock </table-header-cell>
+      <table-header-cell> cars in stock </table-header-cell>
     </template>
     <template #body>
       <tr v-for="car in cars" :key="car.id">
         <table-cell> {{ car.car_name }}</table-cell>
         <table-cell> {{ car.automaker }}</table-cell>
         <table-cell> {{ car.number_of_available_cars }}</table-cell>
+        <table-cell> {{ car.in_stock == 1 ? "yes" : "no" }}</table-cell>
         <table-cell> {{ car.in_stock == 1 ? "yes" : "no" }}</table-cell>
       </tr>
     </template>
