@@ -5,7 +5,7 @@
 * [Setup](#setup)
 
 ## General info
-This project is to implement the basic authentication and create an api that provides all the cars that are currently in stock with appropriate test cases. The project is to show my laravel coding style and writing test cases. 
+This project is to implement the basic authentication and create an api that provides all the cars that are currently in stock with appropriate test cases. 
 	
 ## Technologies
 Project is created with:
