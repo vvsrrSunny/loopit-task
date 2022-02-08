@@ -12,8 +12,7 @@
               <div class="flex items-center">
                 <div class="hidden md:block">
                   <div class="flex items-baseline space-x-4">
-                    <form method="POST" action="{{ route('logout') }}">
-                      @csrf
+                    <form method="POST" action="/api/logout">
                       <input
                         class="
                           bg-indigo-700

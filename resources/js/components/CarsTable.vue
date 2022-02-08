@@ -42,7 +42,6 @@ export default {
   methods: {
     displayCars() {
       axios.get("/dashboard").then((response) => {
-        console.log(response.data);
         this.cars = response.data;
       });
     },
