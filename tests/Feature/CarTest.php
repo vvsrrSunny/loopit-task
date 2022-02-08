@@ -43,7 +43,7 @@ test('users can get the list of available cars', function () {
 test('users can add car', function () {
     $user = User::factory()->create();
 
-    $this->actingAs($user)->getJson(route('cars.store'), [
+    $this->actingAs($user)->postJson(route('cars.store'), [
         'car_name' => '1 Series',
         'automaker' => 'BMW',
         'number_of_available_cars' => '1',
