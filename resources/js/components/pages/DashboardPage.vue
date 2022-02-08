@@ -6,29 +6,27 @@
           <div class="border-b border-indigo-300">
             <div class="flex items-center justify-between h-16 px-4 sm:px-0">
               <a href="/">
-                <application-logo
-                />
+                <application-logo />
               </a>
               <div class="flex items-center">
                 <div class="hidden md:block">
                   <div class="flex items-baseline space-x-4">
-                    <form method="POST" action="/api/logout">
-                      <input
-                        class="
-                          bg-indigo-700
-                          text-white
-                          px-3
-                          py-2
-                          rounded-md
-                          text-sm
-                          font-medium
-                          cursor-pointer
-                          hover:opacity-75
-                        "
-                        type="submit"
-                        value="logout"
-                      />
-                    </form>
+                    <a
+                      class="
+                        bg-indigo-700
+                        text-white
+                        px-3
+                        py-2
+                        rounded-md
+                        text-sm
+                        font-medium
+                        cursor-pointer
+                        hover:opacity-75
+                      "
+                      href="/login"
+                      @click="logout"
+                      >Logout</a
+                    >
                   </div>
                 </div>
               </div>
@@ -61,6 +59,12 @@ export default {
   components: {
     CarsTable,
     ApplicationLogo,
+  },
+  methods: {
+    logout() {
+      axios.post("/logout").then(() => {
+      });
+    },
   },
 };
 </script>
