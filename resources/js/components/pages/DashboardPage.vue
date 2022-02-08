@@ -6,8 +6,7 @@
           <div class="border-b border-indigo-300">
             <div class="flex items-center justify-between h-16 px-4 sm:px-0">
               <a href="/">
-                <x-application-logo
-                  class="w-10 h-10 fill-current text-red-500 bg-red-200"
+                <application-logo
                 />
               </a>
               <div class="flex items-center">
@@ -58,10 +57,11 @@
 
 <script>
 import CarsTable from "../CarsTable.vue";
-
+import ApplicationLogo from "../ApplicationLogo.vue";
 export default {
   components: {
     CarsTable,
+    ApplicationLogo,
   },
 };
 </script>
