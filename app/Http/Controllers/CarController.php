@@ -2,24 +2,23 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Car;
 use Illuminate\Http\Request;
 
 class CarController extends Controller
 {
+
     /**
-     * Display a listing of the resource.
-     * @param Illuminate\Http\Request $request
+     * Store a newly created resource in storage.
      *
-     * @return \Illuminate\Http\Response|\Illuminate\Contracts\View\View|\Illuminate\Contracts\View\Factory
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
      */
-    public function __invoke(Request $request)
+    public function store(Request $request)
     {
-        if ($request->expectsJson()) {
-
-            return Car::query()->orderBy('car_name')->where('in_stock',true)->get();
-        }
-
-        return view('dashboard');
+        //
     }
+
+
+
+
 }

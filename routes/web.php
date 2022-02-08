@@ -17,6 +17,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/dashboard', 'App\Http\Controllers\CarController')->middleware(['auth'])->name('dashboard');
+Route::get('/dashboard', 'App\Http\Controllers\DashboardController')->middleware(['auth'])->name('dashboard');
+
+// Route::resource('cars', 'App\Http\Controllers\CarController')->only([
+//     'index', 'store'
+// ]);
 
 require __DIR__.'/auth.php';
