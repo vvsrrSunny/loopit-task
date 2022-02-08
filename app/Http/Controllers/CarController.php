@@ -17,8 +17,4 @@ class CarController extends Controller
     {
         //
     }
-
-
-
-
 }
