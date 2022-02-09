@@ -5,7 +5,7 @@
 * [Setup](#setup)
 
 ## General info
-This project is to implement the basic authentication and create an api that provides all the cars that are currently in stock with appropriate test cases. 
+This project is to create a platform where people who wants to rent their car can connect to any one who wants to rent a car and viceversa.    
 	
 ## Technologies
 Project is created with:
